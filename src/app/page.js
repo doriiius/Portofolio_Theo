@@ -20,33 +20,6 @@ const TechStack = [
 
 ];
 
-const PDF_FILE_URL = 'http://localhost:3000/CV.pdf';
-
-function downloadCV() {
-  const downloadFileAtURL= (url)=>{
-      fetch(url)
-      .then((response)=>response.blob())
-      .then((blob) => {
-        const blobURL = window.URL.createObjectURL(new Blob([blob]))
-        const fileName = url.split("/").pop();
-      const aTag = document.createElement("a");
-      aTag.href = blobURL;
-      aTag.setAttribute("download", fileName);
-      document.body.appendChild(aTag);
-      aTag.click();
-      aTag.remove();
-      });
-    };
-    return (
-      <div className = "border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-        <button 
-        onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}}>Download file
-        </button>
-      </div>
-    );
-}
-export { downloadCV };
-
 const projects = [
   { 
     title: "Hi-Toyz", 
@@ -67,6 +40,7 @@ const projects = [
     link: "https://github.com/DilR7/IgniteFuture.git"
   },
 ];
+
 
 function useTypingEffect(text, speed = 50) {
   const [displayedText, setDisplayedText] = useState('');

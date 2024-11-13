@@ -229,7 +229,7 @@ export default function TheodoriusPortfolio() {
                 </div>
                 <div className="flex space-x-4">
                   <SocialIcon href="https://github.com/doriiius" icon={<Github />} label="GitHub" />
-                  <SocialIcon href="https://linkedin.com/in/theodorius" icon={<Linkedin />} label="LinkedIn" />
+                  <SocialIcon href="https://linkedin.com/in/theodoriuschandra" icon={<Linkedin />} label="LinkedIn" />
                   <SocialIcon href="https://instagram.com/theo_dorius" icon={<Instagram />} label="Instagram" />
                   <SocialIcon href="mailto:theodorius546@gmail.com" icon={<Mail />} label="Email" />
                 </div>
